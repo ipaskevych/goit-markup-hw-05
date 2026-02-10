@@ -624,7 +624,7 @@ box-shadow:
 }
 .button-subscribe:hover,
 .button-subscribe:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }
 .icons-send {
     fill: currentColor;
@@ -667,8 +667,6 @@ box-shadow:
         border-radius: 4px;
         padding: 72px 24px 24px 24px;
         overflow-y: hidden;
-        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 .modal-close {
@@ -710,7 +708,7 @@ box-shadow:
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.02em;
-    line-height: 2;
+    line-height: 1.5;
     margin-bottom: 16px;
 }
 .form-field {
@@ -812,17 +810,27 @@ box-shadow:
     outline: none;
     border-color: #4D5AE5;
 }
-
-.input-checkbox:checked + .terms-label .custom-checkbox {
-background-color: #404bbf;
+.icon-checkbox {
+opacity: 0;
 fill: #fff;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.input-checkbox:checked + .terms-label .custom-checkbox .icon-checkbox {
+opacity: 1;
+}
+
+.input-checkbox:checked+.terms-label .custom-checkbox {
+    background-color: #404bbf;
+}
+
 .privacy-link {
     color: #4D5AE5;
     font-size: 12px;
     letter-spacing: 0.04em;
 }
 .privacy-link {
+
     text-decoration: underline;
 }
 
@@ -837,6 +845,7 @@ fill: #fff;
         color: #fff;
         border-radius: 4px;
         padding: 18px 65px;
+        min-width: 169px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         display: inline-block;
     cursor: pointer;
