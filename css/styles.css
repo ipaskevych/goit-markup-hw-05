@@ -519,11 +519,12 @@ box-shadow:
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    
 }
 .social-media {
     display: flex;
     flex-direction: column;
+    margin-left: 120px;
 }
 .social-media-links {
     display: flex;
@@ -562,13 +563,14 @@ box-shadow:
     color: #fff;
     margin-bottom: 16px;
 }
+.subscribe-footer {
+    margin-left: auto;
+}
 
 .footer-form {
     display: flex;
     align-items: center;
-    gap: 24px;
-    margin-left: auto;
-    
+    gap: 24px;  
 }
 
 .footer-input::placeholder {
@@ -734,6 +736,8 @@ box-shadow:
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    background-color: transparent;
     border-radius: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -758,8 +762,7 @@ box-shadow:
     fill: #4D5AE5;
 }
 .text-field:focus,
-.comment-field:focus,
-.comment-field:hover {
+.comment-field:focus {
     outline: none;
     border-color: #4D5AE5;
 }
@@ -770,7 +773,8 @@ box-shadow:
     margin-bottom: 16px;
     border-radius: 4px;
     resize: none;
-    outline: none;
+    outline: transparent;
+    background-color: transparent;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.04em;
