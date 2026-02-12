@@ -617,6 +617,8 @@ box-shadow:
     width: 165px;
     text-align: center;
     white-space: nowrap;
+    font-weight: 500;
+    line-height: 1.5;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -750,6 +752,8 @@ box-shadow:
     left: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
+    top: 50%; 
+    transform: translateY(-50%);
 }
 .input-wrapper:hover .icon-field {
     fill: #4D5AE5;
